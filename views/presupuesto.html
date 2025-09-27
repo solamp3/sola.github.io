@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--Empezamos la pagina de presupuesto-->
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="lang" content="es"> 
+        <meta name="description" content="trabajo final, tienda de musica"> 
+        <meta name="robots" content="NOFOLLOW"> 
+        <meta name="Author" content="Queralt Rives Fillat"> 
+        <meta name="keywords" content="trabajo clase, tienda musica, guitarras, cuerdas, amplificadores"> 
+        <meta name="revisit-after" content="2 days"> 
+        <meta name="category" content="Prácticas"> 
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css"> 
+        <title>Sola</title>
+    </head>
+
+    <body>
+        <!--Marcamos en el menu la opcion de presupuesto para indicar que es la pagina actual-->
+        <header>
+            <img class="logo" src="../assets/imagenes/logos/sola_blanc.png" alt="Logo_sola">
+            <nav>  
+            <div class="div_menu"> 
+                <span class="boton"> 
+                    <a href="../index.html" class="div_menu">Inicio</a> 
+                </span> 
+                <span class="boton"> 
+                    <a href="productos.html" class="div_menu">Productos</a> 
+                </span>
+                <span class="botonin"> 
+                    <a href="presupuesto.html" class="current">Presupuesto</a> 
+                </span> 
+                <span class="boton"> 
+                    <a href="contacto.html" class="div_menu">Contacto</a> 
+                </span> 
+             </div> 
+        </nav> 
+
+        <!--En este caso el presupuesto se tratara de si se quiere pedir atencion personalizada o el mantenimiento de una guitarra-->
+        </header>
+            <h1>¿Quieres que te ayudemos o que arreglemos tu guitarra? ¡Contáctanos!</h1>
+            <form name="presupuesto" method="post">
+                <label for="nombre" class="texto_principal">Nombre:</label><br>
+                <input type="text" class="texto_principal" id="nombre" name="nombre" required><br><br>
+
+                <label for="email" class="texto_principal">Correo electrónico:</label><br>
+                <input type="email" class="texto_principal" id="email" name="email" required><br><br>
+
+                <label for="telefono" class="texto_principal">Teléfono:</label><br>
+                <input type="tel" class="texto_principal" id="telefono" name="telefono" required><br><br>
+
+                <label for="mensaje" class="texto_principal">Mensaje:</label><br>
+                <textarea id="mensaje" class="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="checkbox" class="checkbox" id="aceptar_politica" name="politica_privacidad" required>
+                <label for="aceptar_politica" class="texto_principal">
+                    He leído y acepto la 
+                    <a href="politica_privacidad.html">Politica de privacidad.</a>
+                </label><br><br>
+
+                <input type="submit" value="Enviar" class="texto_principal">
+            </form>
+
+        <!--El pie de pagina es el mismo para todas las pestañas-->
+        <footer>
+            <div class="footer_container">
+                <div class="footer_izquierda">
+                    <a href="https://www.instagram.com/sola_sido.mp3?igsh=MXZkMW5qc3FvODJnbg==">
+                        <img src="../assets/imagenes/logos/instagram_blanco.png" alt="Instagram logo" class="imagen_footer">
+                    </a>
+                    <a href="https://www.tiktok.com/@sola_sido.mp3?is_from_webapp=1&sender_device=pc">
+                        <img src="../assets/imagenes/logos/tiktok_blanco.png" alt="Tiktok logo" class="imagen_footer">
+                    </a>
+                    <a href="https://youtube.com/@sola_sido.mp3?si=ydhQjJbHyw4cfzda">
+                        <img src="../assets/imagenes/logos/youtube_blanco.png" alt="Youtube logo" class="imagen_footer">
+                    </a>
+                    <p>@sola_sido.mp3</p>
+                </div>
+
+                <div class="footer_centro">
+                    <a href="aviso_legal.html" class="justifcado_centro">Aviso Legal</a>
+                </div>
+
+                <div class="justifcado_derecha">
+                    <p class="justifcado_derecha">Plaza Poeta Marquina, 3, 17002 Girona</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
